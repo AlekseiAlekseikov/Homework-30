@@ -3,7 +3,7 @@ from datetime import datetime
 import pytest
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from module_29_testing.hw.main.models import Client, Client_parking, Parking
+from main.models import Client, Client_parking, Parking
 
 
 @pytest.fixture
