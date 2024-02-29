@@ -6,3 +6,4 @@ isort
 mypy
 pytest
 Flask
+Flask-SQLAlchemy
