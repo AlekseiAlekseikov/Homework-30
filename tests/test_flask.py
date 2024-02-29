@@ -1,5 +1,5 @@
 import pytest
-from module_29_testing.hw.main.models import Client, Client_parking, Parking
+from main.models import Client, Client_parking, Parking
 
 
 @pytest.mark.parametrize("endpoint", ["/clients", "/clients/1", "/parkings"])
