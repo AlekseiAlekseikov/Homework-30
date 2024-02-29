@@ -8,3 +8,4 @@ pytest
 Flask
 Flask-SQLAlchemy
 factory_boy
+types-Flask
