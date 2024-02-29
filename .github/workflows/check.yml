@@ -1,37 +1,37 @@
 workflow:
-rules:
-- if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
 
 image: python:latest
 
 stages:
-- build
-- test
+  - build
+  - test
 
 before_script:
-- pip install -r requirements.txt
+  - pip install -r requirements.txt
 
 unittest:
-stage: test
-script:
-- pytest tests
+  stage: test
+  script:
+    - pytest tests
 
 mypy:
-stage: test
-script:
-- mypy main/
+  stage: test
+  script:
+    - mypy main/
 
 black:
-stage: test
-script:
-- black --diff --check main/
+  stage: test
+  script:
+    - black --diff --check main/
 
 isort:
-stage: test
-script:
-- isort --check-only main/
+  stage: test
+  script:
+    - isort --check-only main/
 
 flake8:
-stage: test
-script:
-- flake8 main/
+  stage: test
+  script:
+    - flake8 main/
