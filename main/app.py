@@ -28,7 +28,7 @@ def create_app():
         """
             Получить список всех клиентов.
 
-        Returns:
+            Returns:
             JSON: Список клиентов.
         """
         clients: List[Client] = db.session.query(Client).all()
