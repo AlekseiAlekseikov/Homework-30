@@ -7,3 +7,4 @@ mypy
 pytest
 Flask
 Flask-SQLAlchemy
+factory_boy
