@@ -26,7 +26,7 @@ def create_app():
     @app.route("/clients", methods=["GET"])
     def get_clients_handler():
         """
-            Получить список всех клиентов.
+        Получить список всех клиентов.
 
         Returns:
             JSON: Список клиентов.
